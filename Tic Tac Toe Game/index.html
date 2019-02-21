@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript XOX Oyunu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <style>
+    *{box-sizing: border-box}
+    .container{width: 300px; overflow: hidden; margin: 150px auto 0;}
+
+    .container span{width: 100%; display: block; text-align: center;
+    font-family: sans-serif; color: tomato; font-size: 25px; background:white ;
+                border: 5px solid#000; font-weight:bold;}
+
+    .container .box{float: left; width: 100px; height: 100px; border: 5px solid #111;
+                    transition: all .25s ease-in-out; font-family: sans-serif; 
+                    font-size: 85px; text-align: center; cursor: pointer;}
+
+
+    .container .box:hover{background: rgba(10, 10, 10, 0.5); color: #fff;}    
+
+    button{background: #ffffff; color:#F02709;font-weight:bold; border: 5px solid#DEF009;
+            cursor: pointer; width: 200px; height: 40px; font-size: 22px; display: block;
+            margin: 10px auto;
+            }
+    
+    .win {background:#FC0202; color: white;}
+ 
+
+    </style>
+
+</head>
+<body>
+    <div class="container" id ="main">
+        <span id="turn">Oyna!</span>
+        <div class="box " id="box1"></div>
+        <div class="box " id="box2"></div>
+        <div class="box " id="box3"></div>
+        <div class="box " id="box4"></div>
+        <div class="box " id="box5"></div>
+        <div class="box " id="box6"></div>
+        <div class="box " id="box7"></div>
+        <div class="box " id="box8"></div>
+        <div class="box " id="box9"></div>
+    </div>
+
+    <button onclick="replay()">Yeniden Oyna</button>
+
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
